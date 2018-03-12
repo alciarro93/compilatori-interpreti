@@ -1,6 +1,6 @@
 # PROGETTO COMPILATORI E INTERPRETI 2016/2017
 
-Il progetto consiste nella realizzazione di un compilatore per il linguaggio la cui sintassi e` definita nel file FOOLPLUS.g. 
+Il progetto consiste nella realizzazione di un compilatore per il linguaggio la cui sintassi e` definita nel file FOOL.g4 
 
 **IL LINGUAGGIO**
 
