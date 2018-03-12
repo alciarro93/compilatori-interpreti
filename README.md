@@ -71,7 +71,7 @@ seguire la sezione **Installazione** fino al punto 4 (il file *antlr-4.6-complet
 * Windows > Show View > Other.. > ANTLR > aggiungere Parse Tree e Syntax Diagram
    
 # Clonare il progetto
-- `git clone https://github.com/antoniofaienza93/compilatori-interpreti.git`
+- `git clone https://github.com/alciarro93/compilatori-interpreti.git`
 -  Importare il progetto in Eclipse 
 -  Andare nella sezione "Lanciare un esempio per parsing/analysis" 
 
