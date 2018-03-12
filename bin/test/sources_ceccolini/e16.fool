@@ -1,0 +1,20 @@
+/*ESEMPIO ERRATO: chiamata ad un metodo della classe figlia*/
+
+class A(int aField1){
+	int getAField1()
+		aField1;
+}
+
+class B implements A(int bField1, bool bField2){
+	int getBField1()
+		bField1;
+	bool getBField2()
+		bField2;
+}
+;
+let 
+	A a1obj = new A(4); 
+	B b1obj = new B(34,34,true); 
+	A a2obj = new B(22,22,false);
+	
+in a1obj.getAField1() + b1obj.getAField1() + a2obj.getAField1() + a2obj.getBField1();

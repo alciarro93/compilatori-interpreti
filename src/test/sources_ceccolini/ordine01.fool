@@ -1,0 +1,12 @@
+class B implements A (bool bField1){
+	bool aFun1(bool aFun1Par1) 
+		false;
+}
+
+class A (int aField1){
+	bool aFun1(int aFun1Par1) 
+		aField1 == aFun1Par1;
+};
+
+let B b = new B(true, 10); 
+in b.aFun1(true,2);

@@ -1,0 +1,13 @@
+//Overriding2:
+  class A {
+        int f() 1;
+    }
+    class B implements A {
+        int f() 3;
+    };
+    let
+        A a = new A;
+        A b = new B;
+    in
+        print(a.f() + b.f());
+//-   "4"

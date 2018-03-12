@@ -1,0 +1,5 @@
+//Subclass inside superclass' constructor:
+class A (B b)
+    class B implements A (B b);
+    print(1);
+//-   "1"

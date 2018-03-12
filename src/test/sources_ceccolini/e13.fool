@@ -1,0 +1,9 @@
+/*ESEMPIO CORRETTO, metodo con lo stesso nome della classe*/
+
+class A (int b){
+	bool A(int a1)
+		false;
+	
+}
+
+;let A a = new A(32); in a.A(2);

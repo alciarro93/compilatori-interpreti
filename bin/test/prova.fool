@@ -1,0 +1,11 @@
+class B (int paramA){ 
+	bool getX(int p1) 
+		true;
+	int getY(int paramGETYofclassB)
+		2 + 3;
+};
+let 
+	int d = 4;
+	B b = new B(d);	
+	bool c = b.getX(d);
+in b.getX(d);

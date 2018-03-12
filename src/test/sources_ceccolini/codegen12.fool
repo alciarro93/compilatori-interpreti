@@ -1,0 +1,29 @@
+class A{
+	int get3() 3;
+	int get1() if((this.get3() == 3) || false) then {34} else {43};
+}
+
+class B implements A{
+	int get2() this.get4()*2;
+	int get4() 4;
+	//C getC() new C(5);
+	C getC()
+		let
+			C c = new C(5);
+		in
+			c;
+}
+
+class C(int var5){
+	int get5()
+		var5;
+}
+
+;
+
+let
+	B b = new B;
+	A a = new A;
+	C c = b.getC();
+in
+	c.get5();

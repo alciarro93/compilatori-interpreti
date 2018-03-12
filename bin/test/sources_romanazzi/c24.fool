@@ -1,0 +1,14 @@
+//If test 2:
+class A {
+    int f() 44;
+  }
+  class B implements A
+  class C implements B
+  class D implements B;
+  let A a = new A;
+      C c = new C;
+      D d = new D;
+      C foo() if true then {c} else {d};
+      C robo = foo();
+  in robo.f();
+//- "type errors"

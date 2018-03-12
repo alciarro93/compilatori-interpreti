@@ -1,0 +1,8 @@
+/*ESEMPIO ERRATO, CLASSE CHE IMPLEMENTA SE STESSA*/
+
+class B implements B (bool bField1){
+	bool aFun1(int aFun1Par1) 
+		false;
+};
+
+2;

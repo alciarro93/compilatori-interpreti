@@ -1,0 +1,21 @@
+class A (int aField1){
+	bool aFun1(int aFun1Par1) 
+		aField1 == aFun1Par1;
+}
+
+class B implements A (bool bField1){
+	bool aFun1(int aFun1Par1) 
+		false;
+}
+
+class C (A cField1, int cField2){
+	int cFun1(int cFun1Par1) 
+		2;
+}
+
+class D (B cField1){
+	int dFun1(int dFun1Par1) 
+		2;
+};
+
+2;

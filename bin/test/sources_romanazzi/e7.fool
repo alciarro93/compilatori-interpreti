@@ -1,0 +1,14 @@
+//New inside new:
+class A (int x) {
+        int value() x;
+    }
+    class B implements A (int x, A a) {
+        A getA() a;
+    }
+    ;
+    let
+        B b = new B(0, new B(10, new A(2)));
+        A a = b.getA();
+    in
+        print(b.value() + a.value());
+//-   "10"

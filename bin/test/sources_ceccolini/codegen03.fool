@@ -1,0 +1,6 @@
+class A(int aField1, int aField2){
+	int aFun1(int aFun1Par1) 
+		aFun1Par1;
+};
+
+let int x = 3; A a = new A(11,22); in a.aFun1(33);

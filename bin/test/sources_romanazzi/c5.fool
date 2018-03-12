@@ -1,0 +1,14 @@
+//Using this with subtyping:
+class Numero (int x) {
+        Numero getThis() this;
+        int getX() x;
+    }
+    class Numero2 implements Numero (int x) {
+        Numero2 getThis() this;
+    };
+    let
+        Numero2 num = new Numero2(12);
+        Numero num2 = num.getThis();
+    in
+        print(num2.getX());
+//-   "12"

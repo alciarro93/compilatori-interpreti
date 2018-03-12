@@ -1,0 +1,15 @@
+/*ESEMPIO ERRATO: c non è un oggetto */
+
+class A (int a){
+	bool funz(bool funz)
+		true;
+	
+}
+
+class B implements A (int b){
+	bool funz(bool funz)
+		true;
+	
+}
+
+; let int c = 3; B b = new B(2,4); in c.funz(true);

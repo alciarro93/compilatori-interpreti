@@ -1,0 +1,33 @@
+class A1(B b){
+	int getBPar1() b.getBPar1()*10;
+}
+
+class D implements C(int dPar1){
+	int getDPar1() aPar1;
+}
+
+
+class C implements B(int cPar1){
+	int getCPar1() aPar1;
+	A getA()
+		let 
+			A a = new A(19);
+		in
+			a;
+}
+
+class B implements A(int bPar1){
+	int getBPar1() bPar1;
+}
+
+class A(int aPar1){
+	int getAPar1() aPar1;
+};
+
+let
+	int n=3;
+	C c = new C(11,22,33);
+	A a = c.getA();
+	A1 a1 = new A1(c);
+in
+	a1.getBPar1() + a.getAPar1();

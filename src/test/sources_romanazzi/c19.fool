@@ -1,0 +1,13 @@
+//Valore di ritorno metodo errato 2:
+class B(C object){
+         C get() object;
+      }
+      class C {
+         int get() 44;
+      };
+      let
+      C objc = new C;
+      B objb = new B(objc);
+      int y = objb.get();
+      in print(y);
+//- "semantic errors"

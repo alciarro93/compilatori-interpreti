@@ -1,0 +1,23 @@
+//Dynamic Dispatch:
+class Numero(int x) {
+      int getX() x;
+      int getY() x;
+  }
+  class NumeroI implements Numero(int x) {
+      int getY() x + 1;
+  }
+  class NumeroV implements Numero(int x) {
+      int getX() x + 2;
+      int getY() x + 3;
+  }
+  class NumeroX implements NumeroV(int x) {
+      int getX() x + 3;
+  };
+  let
+      Numero num = new Numero(2);
+      Numero num1 = new NumeroI(2);
+      Numero num2 = new NumeroV(2);
+      Numero num3 = new NumeroX(2);
+  in
+      print(num.getX() + num1.getY() + num2.getX() + num3.getY());
+//- "14"

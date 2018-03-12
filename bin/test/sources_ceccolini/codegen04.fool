@@ -1,0 +1,21 @@
+class A(int aField1, int aField2){
+
+	int aFun1(int aFun1Par1)
+		let
+			int x = 5;
+			int funz(int p1) x+p1;
+		in
+			aFun1Par1+funz(2);
+
+	int aFun3(int aFun3Par1) 
+		1+this.aFun1(aFun3Par1);
+		
+	int aFun4(int aFun4Par1) 
+		1+this.aFun3(aFun4Par1);
+		
+	int aFun2(int aFun2Par1) 
+		1+this.aFun4(aFun2Par1);
+		
+};
+
+let int x = 3; A a = new A(11,22); in a.aFun2(10);

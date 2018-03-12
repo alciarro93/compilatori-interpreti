@@ -1,0 +1,12 @@
+//Valore di ritorno metodo corretto 2:
+class A(B object) {
+         B get() object;
+      }
+      class B {
+         int get() 555;
+      };
+      let B objb = new B;
+      A obja = new A(objb);
+      B objb2 = obja.get();
+      in print(objb2);
+//- "2"

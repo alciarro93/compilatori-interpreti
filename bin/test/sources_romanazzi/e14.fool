@@ -1,0 +1,15 @@
+//Class declaration visibility inside global scope 3:
+class C implements B (A a)
+    class B implements A (A a)
+    class A {
+      int foo(F f) 9;
+    }
+    class F {
+      int foo(F f) 6;
+    };
+    let
+      B b = new B(new A);
+      F f = new F;
+    in
+      print(b.foo(f));
+//-   "9"

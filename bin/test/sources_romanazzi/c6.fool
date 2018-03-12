@@ -1,0 +1,15 @@
+//This with subtyping:
+class A
+    class B implements A {
+        int get()
+            let
+                int nestedGet(A a) 5;
+            in
+                nestedGet(this)
+        ;
+    };
+    let
+        B b = new B;
+    in
+        print(b.get());
+//-    "5"

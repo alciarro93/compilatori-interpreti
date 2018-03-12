@@ -1,0 +1,9 @@
+//Undefined var in method:
+class A {
+      int id(int x) x;
+  };
+  let
+      A a = new A;
+  in
+      print(a.id(i));
+//- "semantic errors"

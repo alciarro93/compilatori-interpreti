@@ -1,0 +1,11 @@
+//Simple method inheritance:
+class A {
+    int u() 1;
+  }
+  class B implements A {
+    int s(int x) x + 1;
+  };
+
+  let B x = new B;
+  in print(x.u());
+// - "1"

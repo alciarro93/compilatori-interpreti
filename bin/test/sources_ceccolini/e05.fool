@@ -1,0 +1,4 @@
+let 
+	bool x=2; 
+	bool foo(int x) true; 
+in foo(3);

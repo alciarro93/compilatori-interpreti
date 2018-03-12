@@ -1,0 +1,15 @@
+//Overriding methods with compatible class subtypes:
+class A
+    class B implements A
+    class C {
+        int g(B b) 1;
+    }
+    class D implements C{
+        int g(A a) 2;
+    };
+    let
+        A a = new A;
+        D d = new D;
+    in
+        print(d.g(a));
+//-   "2"

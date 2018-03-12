@@ -1,0 +1,4 @@
+//Class not declared:
+let A nonExistent = new A;
+  in print(0);
+//- "semantic errors"

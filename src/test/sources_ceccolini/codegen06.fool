@@ -1,0 +1,13 @@
+class B(int bField1){
+	int getField1()
+		bField1;
+}
+
+class A(int aField1){
+
+	int aFun1(B aFun1Par1)
+		aFun1Par1.getField1() + aField1; 
+		
+};
+
+let int x = 3; B b = new B(15); A a = new A(10); in a.aFun1(b);

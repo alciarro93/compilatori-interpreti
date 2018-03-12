@@ -1,0 +1,8 @@
+//Incompatible object types assignment:
+  class A
+    class N;
+    let
+        A a = new N;
+    in
+        print(4);
+//-   "type errors"
