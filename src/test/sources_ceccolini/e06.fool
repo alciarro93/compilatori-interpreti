@@ -1,9 +1,0 @@
-class BananaFather
-
-
-class BananaFather(int b){
-	int bananaFun(int r) 
-		r;
-}; 
-
-2;

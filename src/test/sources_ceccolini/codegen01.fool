@@ -1,4 +1,0 @@
-let 
-	int x=320; 
-	bool y=true; 
-in x;

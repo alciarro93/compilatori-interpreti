@@ -1,4 +1,0 @@
-let 
-	int x=2;
-	bool y=true; 
-in y+3;

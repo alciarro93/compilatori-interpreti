@@ -17,18 +17,9 @@ public class IntNode implements Node {
     return s+"Int:" + Integer.toString(val) +"\n";  
   }
   
-  public Integer getVal() {
-	  return val;
-  }
-  
   public Node typeCheck() {
     return new IntTypeNode();
   } 
-  
-  public VarDecNode castToVarDecNode(Integer val) {
-	return new VarDecNode(val.toString(), new IntTypeNode() );
-	  
-  }
   
   @Override
  	public ArrayList<SemanticError> checkSemantics(Environment env) {

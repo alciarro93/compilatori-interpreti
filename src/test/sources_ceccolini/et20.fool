@@ -1,8 +1,0 @@
-/*ESEMPIO ERRATO: numero parametri errato */
-
-class A(int c){
-	int getC()
-		c;
-}
-
-;let A a = new A(4); in a.getC(3);

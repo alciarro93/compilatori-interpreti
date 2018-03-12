@@ -1,9 +1,0 @@
-class A (int aField1){
-	bool aFun1(int aFunPar1) aField1 == aFunPar1;
-}
-
-class B implements A (bool bField1){
-	int aFun1(int aFunPar1) 2;
-};
-
-2;

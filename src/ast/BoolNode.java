@@ -30,11 +30,6 @@ public class BoolNode implements Node {
   
   public String codeGeneration() {
 		return "push "+(val?1:0)+"\n";
-	  	//return "push "+(val?"true":"false")+"\n";
 	  }
-
-public boolean getVal() {
-	return val;
-}
          
 }  

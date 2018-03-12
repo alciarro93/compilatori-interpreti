@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 import util.Environment;
 import util.SemanticError;
-import util.Util;
 import lib.FOOLlib;
 
 public class IfNode implements Node {
@@ -21,8 +20,8 @@ public class IfNode implements Node {
   
   public String toPrint(String s) {
     return s+"If\n" + cond.toPrint(s+"  ") 
-                    + s+"thenBranch:\n" + th.toPrint(s+"  ")   
-                    + s+"elseBranch:\n" + el.toPrint(s+"  "); 
+                    + th.toPrint(s+"  ")   
+                    + el.toPrint(s+"  "); 
   }
   
   
@@ -37,17 +36,15 @@ public class IfNode implements Node {
 	  //check semantics in the then and in the else exp
 	  res.addAll(th.checkSemantics(env));
 	  res.addAll(el.checkSemantics(env));
-	   
+	  
 	  return res;
 	}
   
   
   public Node typeCheck() {
     if (!(FOOLlib.isSubtype(cond.typeCheck(),new BoolTypeNode()))) {
-    	FOOLlib.setTypeCheckError("non boolean condition in if");
-    	// TODO delete
-//      System.out.println("non boolean condition in if");
-//      System.exit(0);
+      System.out.println("non boolean condition in if");
+      System.exit(0);
     }
     Node t = th.typeCheck();
     Node e = el.typeCheck();
@@ -55,10 +52,8 @@ public class IfNode implements Node {
       return e;
     if (FOOLlib.isSubtype(e,t))
       return t;
-    FOOLlib.setTypeCheckError("Incompatible types in then else branches");
-    //TODO delete
-//    System.out.println("Incompatible types in then else branches");
-//    System.exit(0);
+    System.out.println("Incompatible types in then else branches");
+    System.exit(0);
     return null;
   }
   

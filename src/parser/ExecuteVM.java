@@ -16,10 +16,6 @@ public class ExecuteVM {
     private int rv;
     
     public ExecuteVM(int[] code) {
-    	for(int i=0; i< code.length; i++) {	//stampa MEMSIZE valori
-    		System.out.println(code[i]);
-    	}
-    	
       this.code = code;
     }
     
@@ -30,10 +26,9 @@ public class ExecuteVM {
         int address;
         switch ( bytecode ) {
           case SVMParser.PUSH:
-        	  //System.out.println("VA QUA");
             push( code[ip++] );
             break;
-          case SVMParser.POP:        	
+          case SVMParser.POP:
             pop();
             break;
           case SVMParser.ADD :

@@ -4,12 +4,10 @@ import java.util.ArrayList;
 import util.Environment;
 import util.SemanticError;
 
-
-// tipo della grammatica 
 public class ArrowTypeNode implements Node {
 
-  private ArrayList<Node> parlist; 						// lista di parametri
-  private Node ret;										// return 
+  private ArrayList<Node> parlist; 
+  private Node ret;
   
   public ArrowTypeNode (ArrayList<Node> p, Node r) {
     parlist=p;
