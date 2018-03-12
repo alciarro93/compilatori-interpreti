@@ -1,9 +1,0 @@
-//Wrong Covariance with objects:
-class GrandParent(int a) {
-      Parent p(Parent o) o;
-  }
-  class Parent implements GrandParent(int a){
-      GrandParent p(GrandParent c) c;
-  };
-  let int x = 4; Parent o = new Parent(x); in o.p(x);
-//- "type errors"

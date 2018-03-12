@@ -1,3 +1,4 @@
+package Prove;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileWriter;
@@ -19,7 +20,7 @@ import ast.Node;
 public class Test {
     public static void main(String[] args) throws Exception {
       
-        String fileName = "prova.fool";
+        String fileName = "./src/Prove/test.fool";
       
         FileInputStream is = new FileInputStream(fileName);
         ANTLRInputStream input = new ANTLRInputStream(is);

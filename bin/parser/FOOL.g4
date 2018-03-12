@@ -11,12 +11,9 @@ grammar FOOL;
  * PARSER RULES
  *------------------------------------------------------------------*/
   
-prog   : exp SEMIC                 		#singleExp
-       | let exp SEMIC                 	#letInExp
-       | (classdec)+ SEMIC (let)? exp SEMIC	#classExp
+prog   : exp SEMIC                 #singleExp
+       | let exp SEMIC             #letInExp
        ;
-
-classdec  : CLASS ID ( IMPLEMENTS ID )? (LPAR vardec ( COMMA vardec)* RPAR)?  (CLPAR (fun SEMIC)+ CRPAR)? ;
 
 let       : LET (dec SEMIC)+ IN ;
 
@@ -33,7 +30,6 @@ dec   : varasm           #varAssignment
    
 type   : INT  
         | BOOL 
-        | ID
       ;  
     
 exp    :  ('-')? left=term ((PLUS | MINUS) right=exp)?
@@ -45,15 +41,12 @@ term   : left=factor ((TIMES | DIV) right=term)?
 factor : left=value (EQ right=value)?
       ;     
    
-value  :  INTEGER                        		      #intVal
-      | ( TRUE | FALSE )                  		      #boolVal
-      | LPAR exp RPAR                      			  #baseExp
+value  :  INTEGER                           #intVal
+      | ( TRUE | FALSE )                   #boolVal
+      | LPAR exp RPAR                      #baseExp
       | IF cond=exp THEN CLPAR thenBranch=exp CRPAR ELSE CLPAR elseBranch=exp CRPAR  #ifExp
       | ID                                             #varExp
-      | THIS											  #thisExp
-      | ID ( LPAR (exp (COMMA exp)* )? RPAR )          #funExp
-      | (ID | THIS) DOT ID ( LPAR (exp (COMMA exp)* )? RPAR )	  #methodExp     
-      | NEW ID (LPAR exp (COMMA exp)* RPAR)?			  #newExp 
+      | ID ( LPAR (exp (COMMA exp)* )? RPAR )?         #funExp
       ; 
 
    
@@ -85,11 +78,7 @@ VAR    : 'var' ;
 FUN    : 'fun' ;
 INT    : 'int' ;
 BOOL   : 'bool' ;
-CLASS   : 'class' ;
-IMPLEMENTS   : 'implements' ;
-THIS   : 'this' ;
-NEW    : 'new' ;
-DOT    : '.' ;
+
 
 
 //Numbers

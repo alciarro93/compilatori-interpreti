@@ -1,9 +1,0 @@
-/*ESEMPIO CORRETTO, istanziazione oggetto senza la new*/
-
-class A (int b){
-	bool funz(bool funz)
-		true;
-	
-}
-
-; let A a1 = new A(2); A a2 = a1; in a2.funz(true);

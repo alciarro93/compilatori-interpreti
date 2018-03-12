@@ -1,9 +1,0 @@
-/*ESEMPIO ERRATO, funzione chiamata di funzione su una variabile*/
-
-class A (int b){
-	bool funz(bool funz)
-		funz(true);
-	
-}
-
-;2;

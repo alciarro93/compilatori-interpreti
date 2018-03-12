@@ -1,5 +1,0 @@
-//Class field referring to non-existent Class:
-class A (B b);
-  let int x = 42;
-  in print(x);
-//- "semantic errors"

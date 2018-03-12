@@ -1,8 +1,0 @@
-class BananaFather(int b, bool v){
-	int bananaFun(int r) 
-		r;
-};
-let 
-	BananaFather b = new BananaFather(2,true); 
-in b.bananaFun(2);
-

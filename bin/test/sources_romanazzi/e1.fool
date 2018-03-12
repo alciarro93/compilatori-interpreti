@@ -1,8 +1,0 @@
-//Mutually recursive methods in the same class:
-class Fabonicci (int x) {
-        int get(int x) if (x == 20) then {42} else {this.foo(x)};
-        int foo(int x) this.get(x + 1);
-    };
-    let Fabonicci f = new Fabonicci(20);
-    in print(f.get(0));
-//-   "42"
