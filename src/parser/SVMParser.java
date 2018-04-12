@@ -210,14 +210,6 @@ public class SVMParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_assembly; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof SVMListener ) ((SVMListener)listener).enterAssembly(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof SVMListener ) ((SVMListener)listener).exitAssembly(this);
-		}
-		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
 			if ( visitor instanceof SVMVisitor ) return ((SVMVisitor<? extends T>)visitor).visitAssembly(this);
 			else return visitor.visitChildren(this);

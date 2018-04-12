@@ -1,11 +1,12 @@
-antlr4.antlrRegisteredTools=4.4@/tmp/antlr-4.4-complete.jar\:4.6@/home/alciarro/eclipse-workspace/compilatori-interpreti/bin/lib/antlr-4.6-complete.jar
-antlr4.antlrToolPath=/home/alciarro/eclipse-workspace/compilatori-interpreti/bin/lib/antlr-4.6-complete.jar
+antlr4.antlrRegisteredTools=4.4@/tmp/antlr-4.4-complete.jar\:4.6@C\:\\Users\\Alessio Ciarrocchi\\GitHub\\compilatori-interpreti\\src\\lib\\antlr-4.6-complete.jar
+antlr4.antlrToolPath=C\:\\Users\\Alessio Ciarrocchi\\GitHub\\compilatori-interpreti\\src\\lib\\antlr-4.6-complete.jar
 antlr4.encoding=UTF-8
-antlr4.listener=true
-antlr4.visitor=false
+antlr4.listener=false
+antlr4.visitor=true
 antlr4.vmArgs=
 antlr4ide.is_project_specific=true
 autobuilding=true
+com.github.jknack.antlr4ide.Antlr4.useProjectSettings=true
 eclipse.preferences.version=1
 is_project_specific=
 outlet.DEFAULT_OUTPUT.cleanupDerived=true
