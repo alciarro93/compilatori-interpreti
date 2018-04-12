@@ -1,9 +1,12 @@
-/bin/
+# =========================
+# Eseguibili
+# =========================
+bin/
 
 # =========================
 # Eclipse setting
 # =========================
-.settings/com.github.jknack.antlr4ide.Antlr4.prefs
+.settings/
 
 # =========================
 # Operating System Files
@@ -18,4 +21,4 @@
 
 # Thumbnails
 ._*
-/target/
+target/
