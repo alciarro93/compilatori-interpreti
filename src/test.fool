@@ -1,0 +1,56 @@
+
+class z(int t,int o){ 
+	
+	int foo1(int p1,int p2,int p3)
+		let bool s=false; in p1+t+o;
+	int foo(int c,int k)
+		let bool s=false; in 2;
+	int foo2(int t,int o)
+		let int foo66(int l,int k)4+4; in 1+10;
+}
+
+class car implements z(int c1,int k){ 
+	
+	int foo3(int t,int k)
+		let int foo6(int l,int k) 
+			let int foo9() 5+5; in foo9();
+		int k1=foo6(5,5);
+		in foo6(5,5)*foo1(5,5,5);
+	
+	int foo(int c, int q)
+		let z n1=new car(4,4); in 6;
+	
+	z foo4(z c, int q)
+		let z s=new e(4,7);z t=s; in s;
+	
+}
+
+
+class e implements car(int t,int p){ 
+	
+	int foo6(int l)
+		let int s=25; in 6;
+	
+	int foo(int c, int q)
+		let z n1=new car(4,4); in p;
+
+	int foo5(int c, int q)
+		let z n=new z(4,4);z n2=new e(4,4);int k1=n2.foo(6,8);int k2=this.foo2(6,8); in k1+k2;
+	
+}
+
+class e1(car t1,int p){ 
+	
+	int foo88(car t)
+		let int s=25; in t.foo(5,5);
+	
+};
+
+	let 
+	car n=new car(4,77);
+	z v1=n.foo4(n,10);
+	z v2= new e(6,5);
+	car v3= new car(8,5);
+	e1 m= new e1(new car(5,5),5);
+	in print(v3.foo3(5,5)+v1.foo(4,4)*v2.foo5(4,4)+m.foo88(n));
+	
