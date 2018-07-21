@@ -41,7 +41,6 @@ type   : INT
       ;  
     
 exp    :  ('-')? left=term ((PLUS | MINUS) right=exp)?
-		//| (NOT)? left=exp ((AND | OR) right=exp)?
       ;
    
 term   : left=operator ((TIMES | DIV) right=term)?

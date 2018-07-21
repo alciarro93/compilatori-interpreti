@@ -71,12 +71,12 @@ public class IdNode implements Node {
 				}
 			} else {
 
-				// Non sono dentro una class, id non Ã¨ stato dichiarato
+				// Non sono dentro una class, id non è stato dichiarato
 				res.add(new SemanticError("Id " + id + " not declared"));
 			}
 
 		} else {
-			// tmp non Ã¨ null, id Ã¨ stato dichiarato
+			// tmp non è null, id è stato dichiarato
 			entry = tmp;
 			nestinglevel = env.nestingLevel;
 		}

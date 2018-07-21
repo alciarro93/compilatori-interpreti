@@ -46,7 +46,7 @@ public class FoolVisitorImpl extends FOOLBaseVisitor<Node> {
 			declist.add(dc);
 
 			if (dc.IMPLEMENTS() != null) {
-				// System.out.println("\n I am: "+dc.ID(0)+" and my superclass is: "+dc.ID(1));
+				//System.out.println("\n I am: "+dc.ID(0)+" and my superclass is: "+dc.ID(1));
 			}
 			// declarations.add( visit(dc) );
 		}
@@ -177,7 +177,6 @@ public class FoolVisitorImpl extends FOOLBaseVisitor<Node> {
 
 	@Override
 	public Node visitFun(FunContext ctx) {
-		// System.out.println("nome funzione: "+ctx.ID().getText());
 		// initialize @res with the visits to the type and its ID
 
 		FunNode res = new FunNode(ctx.ID().getText(), visit(ctx.type()));

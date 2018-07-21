@@ -1,0 +1,34 @@
+class A (int aField1){
+	bool aFun1(int aFun1Par1) 
+		aField1 == aFun1Par1;
+}
+
+class B implements A (bool bField1){
+	bool aFun1(int aFun1Par1) 
+		false;
+}
+
+class C implements B (bool cField1){
+	bool aFun1(int aFun1Par1) 
+		false;
+}
+
+//contiente oggetto tipo A
+class A1 (A a1Field1, int cField2){
+	int a1Fun1(int a1Fun1Par1) 
+		2;
+}
+
+//passo al costruttore un sottotipo di A
+class B1 implements A1 (B a1Field1){
+	int b1Fun1(int b1Fun1Par1) 
+		2;
+}
+
+//passo al costruttore un sottotipo di B e quindi anche di A
+class C1 implements A1 (C a1Field1){
+	int c1Fun1(int c1Fun1Par1) 
+		2;
+};
+
+2;

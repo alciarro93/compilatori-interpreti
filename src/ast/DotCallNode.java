@@ -215,7 +215,7 @@ public class DotCallNode implements Node {
 
 			// ricorsivamente risalendo la catena
 			classname = env.insideClass;
-			ok = exists(hm1, hm, env.insideClass);
+			ok = exists(hm1, hm, classname);
 			if (ok) {
 				if (tmp == null) {
 					// se tmp è null, la funzione esiste ma non l'ho ancora visitata

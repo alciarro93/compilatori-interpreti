@@ -1,0 +1,18 @@
+class C (A cField1){
+	bool cFun1(int cFun1Par1) 
+		true;
+}
+
+class B implements A (bool bField1){
+	bool aFun1(int aFun1Par1) 
+		false;
+}
+
+class A (int aField1){
+	bool aFun1(int aFun1Par1) 
+		aField1 == aFun1Par1;
+	int aFun2(int aFun2Par1) 
+		aField1;
+}
+
+;let B bObj = new B(2,true); in 2;

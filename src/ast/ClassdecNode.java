@@ -119,7 +119,7 @@ public class ClassdecNode implements Node {
 	// stesso id nella lista dei campi di quest'ultima
 	// Nel caso in cui ci sia, controlla se i tipi sono compatibili: se lo sono
 	// restituisce true, altrimenti false
-	// Se non c'Ã¨ nessun campo con lo stesso id, restituisce true
+	// Se non c'è nessun campo con lo stesso id, restituisce true
 	private boolean subID(VardecContext d, String idleft2) {
 
 		// Prendo la symbol table entry della superclasse

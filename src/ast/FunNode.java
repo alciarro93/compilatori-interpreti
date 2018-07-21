@@ -87,7 +87,6 @@ public class FunNode implements Node {
 			}
 
 			// set func type
-
 			entry.addType(new ArrowTypeNode(parTypes, type));
 			// check semantics in the dec list
 			int prec = env.offset;
@@ -97,7 +96,6 @@ public class FunNode implements Node {
 				// if there are children then check semantics for every child and save the
 				// results
 				for (Node n : declist) {
-					// System.out.println("ppp "+n.toPrint("")+ " "+res);
 					res.addAll(n.checkSemantics(env));
 				}
 			}
@@ -165,7 +163,6 @@ public class FunNode implements Node {
 				System.exit(0);
 			}
 		}
-		// System.out.println(t.toPrint(""));
 		return t;
 	}
 
@@ -205,7 +202,6 @@ public class FunNode implements Node {
 				popDecl += "pop\n";
 				if (dec instanceof VarNode) {
 					if (((VarNode) dec).getExps() instanceof NewExpNode) {
-						// popDecl+="pop\n";
 					}
 
 				}
@@ -257,10 +253,7 @@ public class FunNode implements Node {
 		STentry subEntry = envSaved.symTableL0.get(insideClass);
 
 		for (FunContext f1 : subEntry.getFunContext()) {
-
-			// System.out.println(f.ID().getText()+" "+f1.ID().getText());
 			// se hanno lo stesso id e lo stesso numero di parametri
-
 			if ((nameFun.ID().getText().equals(f1.ID().getText())) && (f1.ID().getText().equals(id))
 					&& (nameFun.vardec().size() == f1.vardec().size())) {
 				int c2 = 0;
@@ -276,7 +269,6 @@ public class FunNode implements Node {
 					return false;
 
 				for (VardecContext v : nameFun.vardec()) {
-					// System.out.println(v.type().getText()+" "+f1.vardec(c2).type().getText()+"
 					// "+c2+" "+insideClass);
 					if (v.type().getText().equals("int") || v.type().getText().equals("bool")) {
 						if (!(v.type().getText().equals(f1.vardec(c2).type().getText()))) {

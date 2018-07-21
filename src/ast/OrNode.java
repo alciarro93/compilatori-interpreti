@@ -36,7 +36,6 @@ public class OrNode implements Node {
 		return new BoolTypeNode();
 	}
 
-	// ** ** DA CONTROLLARE ** **
 	public String codeGeneration() {
 		String or2 = FOOLlib.freshLabel();
 		String orTrue = FOOLlib.freshLabel();

@@ -21,18 +21,6 @@ public class ExecuteVM {
     
     public void cpu() {
       while ( true ) {
-    	//TEST PRINT
-    	/*for(int i=9999; i>=sp;i--){
-    		System.out.println("Top stack = "+ memory[i]+" "+i);
-    	}
-    	System.out.println("\n");
-    	for(int i=0; i<hp;i++){
-    		System.out.println("heap = "+ memory[i]+" "+i);
-    	}
-    	/*if(ra!=0){
-    		System.out.println("RA = "+ ra);
-    	}*/
-    	//System.out.println("\n");
         int bytecode = code[ip++]; // fetch
         int v1,v2;
         int address;

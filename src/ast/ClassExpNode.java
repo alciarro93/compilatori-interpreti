@@ -299,7 +299,7 @@ public class ClassExpNode implements Node {
 	}
 
 	// Prende in input un id (stringa) e una lista di FunContext, restituisce TRUE
-	// se l'id Ã¨ contenuto nella lista di FunContext, FALSE altrimenti
+	// se l'id è contenuto nella lista di FunContext, FALSE altrimenti
 	private boolean containsID(String text, List<FunContext> funSub) {
 		for (FunContext f : funSub) {
 			if (text.equals(f.ID().getText()))

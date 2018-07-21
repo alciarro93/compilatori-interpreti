@@ -1,0 +1,15 @@
+/*ESEMPIO ERRATO, istanziazione oggetto senza la new, classi identica ma nome diverso*/
+
+class A (int b){
+	bool funz(bool funz)
+		true;
+	
+}
+
+class B (int b){
+	bool funz(bool funz)
+		true;
+	
+}
+
+; let A a1 = new A(2); B b = a1; in b.funz(true);
