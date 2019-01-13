@@ -54,12 +54,12 @@ public class Test {
 
 				// CODE GENERATION test.fool.asm
 				String code = ast.codeGeneration();
-				BufferedWriter out = new BufferedWriter(new FileWriter(fileName + ".asm"));
+				BufferedWriter out = new BufferedWriter(new FileWriter("src/test.asm"));
 				out.write(code);
 				out.close();
 				System.out.println("Code generated! Assembling and running generated code.");
 
-				FileInputStream isASM = new FileInputStream(fileName + ".asm");
+				FileInputStream isASM = new FileInputStream("src/test.asm");
 				ANTLRInputStream inputASM = new ANTLRInputStream(isASM);
 				SVMLexer lexerASM = new SVMLexer(inputASM);
 				CommonTokenStream tokensASM = new CommonTokenStream(lexerASM);
