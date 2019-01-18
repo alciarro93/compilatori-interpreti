@@ -1,13 +1,23 @@
 push 0
-push function0
-push function1
+lhp
+push 5
+lhp
+sw
+push 1
+lhp
+add
+shp
 lfp
-push 3
+push 5
 lfp
-push -3
-lfp
+push -2
 add
 lw
+push 0
+add
+lw
+lfp
+push function4
 js
 print
 halt
@@ -19,8 +29,6 @@ push 1
 lfp
 add
 lw
-push 1
-add
 srv
 sra
 pop
@@ -37,41 +45,66 @@ push 1
 lfp
 add
 lw
-push 0
-beq label2
-push 0
-b label3
-label2:
-push 1
-label3:
-push 1
-beq label0
-push 1
-lfp
-add
-lw
-lfp
-push 1
-lfp
-add
-lw
-push 1
-sub
-lfp
-lw
-push -2
-lfp
-lw
-add
-lw
-js
+push 3
 mult
-b label1
-label0:
-push 1
-label1:
 srv
 sra
+pop
+pop
+sfp
+lrv
+lra
+js
+
+function2:
+cfp
+lra
+push 1
+lfp
+add
+lw
+srv
+sra
+pop
+pop
+sfp
+lrv
+lra
+js
+
+function3:
+cfp
+lra
+push 1
+lfp
+add
+lw
+push 2
+mult
+srv
+sra
+pop
+pop
+sfp
+lrv
+lra
+js
+
+function4:
+cfp
+lra
+push 1
+lfp
+add
+lw
+push 2
+lfp
+add
+lw
+mult
+srv
+sra
+pop
 pop
 pop
 sfp

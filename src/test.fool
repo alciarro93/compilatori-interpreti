@@ -1,4 +1,14 @@
-let int gee(int n) n+1 ;
-	int foo(int n)
-	if (n==0) then { 1 } else { n*gee(n - 1) } ;
-in print(foo(3)) ;
+class uno(int x){ 
+	int uno() x;
+	int tre() x*3;
+}
+
+class due implements uno(int x){ 
+	int due() x*2;
+	int tre(int y) x*y;
+};
+
+	let 
+		due n=new due(5);
+	in print(n.tre(5));
+	
