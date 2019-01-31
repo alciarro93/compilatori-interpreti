@@ -76,4 +76,22 @@ class due implements uno(int x){
 	
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	
+	class A{ 
+	int m() 1;
+	int n(A x) x.m();
+}
+
+class B implements A{ 
+	int m() 2;
+}
+
+class C implements A{
+	int m() 3;
+};
+
+	let 
+		A x = new A;
+		B y = new B;
+		
+	in print(x.n(y));
 	

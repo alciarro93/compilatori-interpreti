@@ -1,14 +1,18 @@
-class uno(int x){ 
-	int uno() x;
-	int tre() x*3;
+class A{ 
+	int m() 1;
+	int n(A x) x.m();
 }
 
-class due implements uno(int x){ 
-	int due() x*2;
-	int tre(int y) x*y;
+class B implements A{ 
+	int m() 2;
+}
+
+class C implements A{
+	int m() 3;
 };
 
 	let 
-		due n=new due(5);
-	in print(n.tre(5));
-	
+		A x = new A;
+		B y = new B;
+		
+	in print(x.n(y));
